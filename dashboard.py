@@ -152,8 +152,8 @@ class SecOCDashboardApp:
         self.lbl_rx_mac_status = self._create_field(rx_grid, "Cryptographic MAC", "PENDING", 1, 0)
         self.lbl_rx_led = self._create_field(rx_grid, "Hardware LD2 State", "OFF", 1, 1)
 
-        log_box_frame = tk.Frame(self.root, bg="#121317", padx=20, pady=(0, 15))
-        log_box_frame.pack(fill=tk.BOTH, expand=True)
+        log_box_frame = tk.Frame(self.root, bg="#121317", padx=20, pady=0)
+        log_box_frame.pack(fill=tk.BOTH, expand=True, pady=(0, 15))
 
         tk.Label(log_box_frame, text="REAL-TIME TELEMETRY LOG STREAM", font=("Segoe UI", 9, "bold"), fg="#727B8E", bg="#121317").pack(anchor="w", pady=(0, 4))
         self.log_text = scrolledtext.ScrolledText(log_box_frame, bg="#0E0F12", fg="#CAD1DE", font=("Consolas", 9), height=7, relief="flat", highlightbackground="#222530", highlightthickness=1)
