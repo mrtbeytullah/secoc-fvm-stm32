@@ -1,0 +1,22 @@
+# Build artifacts
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+build/
+Debug/
+Release/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.launch
+*.swp
+*~
